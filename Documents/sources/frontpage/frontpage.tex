@@ -1,0 +1,33 @@
+{
+    \setmainfont{ArialMT} 
+    \definecolor{myblue}{HTML}{2e6ac0} 
+    \newgeometry{left=1cm, right=1cm, top=2cm, bottom=0cm, bindingoffset=0cm, footskip=0cm}
+    \pagenumbering{gobble}
+    \begin{titlepage}
+        \pagecolor{myblue}
+        \thispagestyle{empty}
+        \begin{tikzpicture}[remember picture,overlay]
+;
+
+            \node[anchor=west, xshift = 0cm, yshift = -0.5cm, text width=\textwidth, color=white, anchor=west](title){\fontsize{35}{24pt}\setmainfont{Arial Black}\selectfont \textbf{Title of Document}};
+        
+            \node[anchor = north west, xshift = -0.15cm, yshift = -5.6cm](bg) at (current page.north west){\includegraphics[width=\paperwidth, height=14cm]{sources/frontpage/bp.jpg}};
+
+            
+    
+            \node[anchor=west, xshift = 0cm, yshift = 0cm, text width=\textwidth, color=white, below=of bg](author){\fontsize{17}{1}\setmainfont{Arial Black}\selectfont \textbf{Author:}};
+
+            \node[anchor=west, xshift = 0cm, yshift = 1cm, text width=\textwidth, color=white, below=of author](name){\fontsize{17}{1}\selectfont \textbf{Arshia Gharooni}};
+            
+            \node[anchor=west, xshift = 0cm, yshift = 1cm, text width=\textwidth, color=white, below=of name](email){\fontsize{15}{1}\selectfont Arshiyagharoony@gmail.com};
+            
+            \node[anchor=west, xshift = 0cm, yshift = 1cm, text width=\textwidth, color=white, below=of email](date){\fontsize{15}{1}\selectfont MONTH YEAR};
+        \end{tikzpicture}
+        \newpage
+        \thispagestyle{empty}
+        \pagecolor{white}
+    \end{titlepage}
+}
+\newpage
+\restoregeometry
+\pagenumbering{roman}
