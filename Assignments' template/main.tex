@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+\usepackage{eso-pic}
+\usepackage{transparent}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{formatting} % Include the formatting file
+
+\begin{document}
+
+\titlepageformat % Use the custom title page formatting defined in formatting.sty
+
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  \textcolor{blacktitle}{}\par
+  \vspace{0.5cm}
+  \textcolor{blacktitle}{}
+\end{titlepage}
+
+\ClearShipoutPictureBG
+
+% Assignment Content
+\section*{Question 1}
+\begin{questionbox}
+What is the capital of France?
+\end{questionbox}
+
+\begin{solutionbox}
+  The capital of France is Paris.
+\end{solutionbox}
+
+\section*{Question 2}
+\begin{questionbox}
+Solve the equation $2x + 5 = 11$.
+\end{questionbox}
+
+\begin{solutionbox}
+  The solution to the equation $2x + 5 = 11$ is $x = 3$.
+\end{solutionbox}
+
+\section*{Question 3}
+\begin{questionbox}
+There are 2 cows down there. How many cows are down there?
+\end{questionbox}
+
+\begin{solutionbox}
+  There are 2 cows down there, and here is the code for it:
+\end{solutionbox}
+
+\begin{codebox}
+\begin{verbatim}
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, LaTeX!" << std::endl;
+    return 0;
+}
+\end{verbatim}
+\end{codebox}
+
+\section*{Question 4}
+\begin{questionbox}
+Something Something Something Something Something Something .
+\end{questionbox}
+
+\begin{solutionbox}
+  Something Something Something Something Something Something.
+\end{solutionbox}
+
+\section*{Question 5}
+\begin{questionbox}
+Something Something Something Something Something Something.
+\end{questionbox}
+
+\begin{solutionbox}
+  Something Something Something Something Something Something.
+\end{solutionbox}
+
+\section*{Question 6}
+\begin{questionbox}
+Something Something Something Something Something Something.
+\end{questionbox}
+
+\begin{solutionbox}
+  Comparison of Screening Devices, [PDF]
+with Frank Yang and Piotr Dworczak
+Working paper, 2023.
+At EC’23
+\end{solutionbox}
+% Add more questions, solutions, and code examples as needed
+
+\end{document}
