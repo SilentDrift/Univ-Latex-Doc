@@ -1,0 +1,73 @@
+\ProvidesPackage{beamerthemeArG}
+
+% Packages
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage{lipsum}
+
+% Define colors
+\definecolor{myred}{RGB}{97, 17, 26}
+\definecolor{glassgrey}{rgb}{150,0,20}
+
+% Theme settings
+\usetheme{default}
+\setbeamercolor{structure}{fg=myred}
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{author}{fg=glassgrey}
+\setbeamercolor{date}{fg=glassgrey}
+
+% Define fonts
+\usefonttheme{serif}
+\setbeamerfont{institute}{size=\small}
+
+% TikZ settings for artistic background
+\usetikzlibrary{calc}
+\tikzset{
+  background/.style = {fill=myred!20, draw=myred, rounded corners=20pt},
+  logo/.style = {anchor=center, opacity=0.2}
+}
+
+% Title slide settings
+\setbeamertemplate{title page}{
+  \begin{tikzpicture}[remember picture,overlay]
+    % Background
+    \node [background,inner sep=10pt,fit=(current page.south west) (current page.north east)] {};
+    % Your content
+    \node [inner sep=1cm] at (current page.center) {
+      \begin{minipage}[b]{0.7\linewidth}
+        \usebeamerfont{title}\inserttitle\par
+        \vspace{0.5cm}
+        \usebeamerfont{author}\insertauthor\par
+        \vspace{0.2cm}
+        \usebeamerfont{institute}\insertinstitute\par
+        \vspace{0.2cm}
+        \usebeamerfont{date}\insertdate\par
+        \vspace{1cm}
+      \end{minipage}
+    };
+    % Logo
+    \node [logo] at ($(current page.west)$) {
+      \includegraphics[width=1.8\textwidth]{Resources/Images/titleBg.png}
+    };
+  \end{tikzpicture}
+}
+
+% Frame settings
+\setbeamertemplate{frametitle}{
+  \vspace{0.5cm}
+  \insertframetitle\par
+}
+
+% Footer settings
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor\hspace*{1em}(\insertshortinstitute)
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{1em}\insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}%
+  }
+  \vskip0pt%
+}
