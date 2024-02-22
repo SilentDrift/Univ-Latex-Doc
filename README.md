@@ -22,7 +22,7 @@ In this section, I will include LaTex code for crafting my Documents related to 
 
 ## Documents' Hierarchy 
 ```
-Assignments' template/
+Documents' template/
         │
         ├── main.pdf
         ├── main.tex
@@ -35,7 +35,14 @@ Assignments' template/
 
 
 # Slides
-
+In this section, I will include LaTex code and beamerthemeArG.sty that I use for my presentations.
 ```
-I'll add
+Slides' template/
+     │
+     ├── main.pdf
+     ├── main.tex
+     └── Resources/
+            ├── beamerthemeArG.sty
+            └── images/
+                   └── titleBg.png
 ```
