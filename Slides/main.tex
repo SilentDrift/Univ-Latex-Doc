@@ -1,0 +1,75 @@
+\documentclass{beamer}
+\usepackage{Resources/beamerthemeArG} % Use the custom theme
+
+% Presentation information
+\title{Your Presentation Title}
+\author{Your Name}
+\date{\today}
+\institute{Your Institution}
+
+\begin{document}
+
+% Title slide
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+% Example frame with bullet points and graphics
+\begin{frame}
+  \frametitle{Introduction}
+  \begin{itemize}
+    \item \textbf{Motivation:} Brief explanation of why the topic is important.
+    \item \textbf{Objective:} Clear statement of what the presentation aims to achieve.
+  \end{itemize}
+  
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{example-image}
+  \end{center}
+\end{frame}
+
+% Example frame with blocks and equations
+\begin{frame}
+  \frametitle{Methodology}
+  \begin{block}{Block 1: Data Collection}
+    Description of how data was collected and any preprocessing steps.
+  \end{block}
+  
+  \begin{block}{Block 2: Model Development}
+    Explanation of the models or algorithms used in the analysis.
+    \begin{equation}
+      y = mx + c
+    \end{equation}
+  \end{block}
+\end{frame}
+
+% Example frame with text and citations
+\begin{frame}
+  \frametitle{Results}
+  \lipsum[2]
+
+  \begin{itemize}
+    \item Result 1 \cite{author1_year1}.
+    \item Result 2 \cite{author2_year2}.
+  \end{itemize}
+\end{frame}
+
+% Conclusion frame
+\begin{frame}
+  \frametitle{Conclusion}
+  \begin{block}{Summary}
+    \begin{itemize}
+      \item Recap of key findings and insights.
+      \item Implications of the results for the field.
+      \item Future research directions.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% References frame
+\begin{frame}
+  \frametitle{References}
+  \bibliographystyle{plain}
+  \bibliography{references}
+\end{frame}
+
+\end{document}
