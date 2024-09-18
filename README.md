@@ -49,5 +49,5 @@ Slides' template/
                    └── titleBg.png
 ```
 
-# Slides
+# Sharif Slides
 Honestly, my own template is cool but these days I use SUT's template more often.
