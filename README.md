@@ -36,6 +36,8 @@ Documents' template/
 
 # Slides
 In this section, I will include LaTex code and beamerthemeArG.sty that I use for my presentations.
+
+## Slides' Hierarchy 
 ```
 Slides' template/
      │
@@ -46,3 +48,6 @@ Slides' template/
             └── images/
                    └── titleBg.png
 ```
+
+# Slides
+Honestly, my own template is cool but these days I use SUT's template more often.
